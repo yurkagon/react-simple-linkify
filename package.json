@@ -1,7 +1,7 @@
 {
   "name": "react-simple-linkify",
   "description": "Simple linkify library for react",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "license": "MIT",
   "homepage": "https://github.com/yurkagon/react-simple-linkify",
   "author": "Yura Khvyshchuk <owngameplay@gmail.com> (https://github.com/yurkagon)",
