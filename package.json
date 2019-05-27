@@ -6,14 +6,17 @@
   "description": "Simple linkify library for react",
   "scripts": {
     "start": "webpack --watch",
-    "build": "webpack ./src"
+    "build": "webpack"
   },
-  "dependencies": {
+  "peerDependencies": {
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   },
   "devDependencies": {
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
     "@babel/core": "^7.4.5",
     "@babel/preset-env": "^7.4.5",
     "@babel/preset-react": "^7.0.0",
