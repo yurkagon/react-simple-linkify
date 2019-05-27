@@ -1,6 +1,5 @@
 node_modules
 src
-demo
 .babelrc
 .gitignore
 .editorconfig

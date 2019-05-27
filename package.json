@@ -1,11 +1,16 @@
 {
   "name": "react-simple-linkify",
-  "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT",
   "description": "Simple linkify library for react",
+  "version": "1.0.1",
+  "license": "MIT",
+  "homepage": "https://github.com/yurkagon/react-simple-linkify",
+  "author": "Yura Khvyshchuk <owngameplay@gmail.com> (https://github.com/yurkagon)",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/yurkagon/react-simple-linkify.git"
+  },
+  "main": "build/index.js",
   "scripts": {
-    "start": "webpack --watch",
     "build": "webpack"
   },
   "peerDependencies": {
@@ -27,5 +32,16 @@
     "babel-plugin-transform-react-jsx": "^6.24.1",
     "webpack": "^4.32.2",
     "webpack-cli": "^3.3.2"
-  }
+  },
+  "keywords": [
+    "react-simple-linkify",
+    "react",
+    "linkify",
+    "react-component",
+    "link",
+    "url",
+    "autolink",
+    "urlize",
+    "urlify"
+  ]
 }
