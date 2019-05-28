@@ -34,7 +34,7 @@ Using as React component is a better way because `Linkify` component is memoized
 
 ```javascript
 <Linkify>
-    Some useful description: tasti.github.io/react-linkify/.
+    Some useful description: https://github.com/yurkagon/react-simple-linkify.
     
     That is an youtube video:
     https://www.youtube.com/watch?v=9NSzl8DtdM4
@@ -45,7 +45,7 @@ or
 
 ```javascript
 linkify(`
-    Some useful description: tasti.github.io/react-linkify/.
+    Some useful description: https://github.com/yurkagon/react-simple-linkify.
     
     That is an youtube video:
     https://www.youtube.com/watch?v=9NSzl8DtdM4
@@ -56,7 +56,7 @@ linkify(`
 Renders to:
 
 ```javascript
-Some useful description: <a href="tasti.github.io/react-linkify/">tasti.github.io/react-linkify/</a>.
+Some useful description: <a href="https://github.com/yurkagon/react-simple-linkify">https://github.com/yurkagon/react-simple-linkify</a>.
 
 That is an youtube video:
 <a href="https://www.youtube.com/watch?v=9NSzl8DtdM4">https://www.youtube.com/watch?v=9NSzl8DtdM4</a>
@@ -86,7 +86,7 @@ const UrlEnhancer = (props) => {
 And let's use it:
 ```javascript
 <Linkify component={UrlEnhancer}>
-    Some useful description: tasti.github.io/react-linkify/.
+    Some useful description: https://github.com/yurkagon/react-simple-linkify.
     
     That is an youtube video:
     https://www.youtube.com/watch?v=9NSzl8DtdM4
@@ -97,7 +97,7 @@ or
 
 ```javascript
 linkify(`
-    Some useful description: tasti.github.io/react-linkify/.
+    Some useful description: https://github.com/yurkagon/react-simple-linkify.
     
     That is an youtube video:
     https://www.youtube.com/watch?v=9NSzl8DtdM4
@@ -107,7 +107,7 @@ linkify(`
 Renders to:
 
 ```javascript
-Some useful description: <a href="tasti.github.io/react-linkify/" rel="noopener noreferrer" target="_blank">tasti.github.io/react-linkify/</a>.
+Some useful description: <a href="https://github.com/yurkagon/react-simple-linkify" rel="noopener noreferrer" target="_blank">https://github.com/yurkagon/react-simple-linkify</a>.
 
 That is an youtube video:
 {/* shallow render of mocked component */}
