@@ -1,48 +1,55 @@
 {
-  "name": "react-simple-linkify",
-  "description": "Simple linkify library for react",
-  "version": "1.0.3",
+  "name": "react-simple-linkify-monorepo",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Monorepo for react-simple-linkify (library + demo)",
   "license": "MIT",
-  "homepage": "https://github.com/yurkagon/react-simple-linkify",
   "author": "Yura Khvyshchuk <owngameplay@gmail.com> (https://github.com/yurkagon)",
   "repository": {
     "type": "git",
-    "url": "git://github.com/yurkagon/react-simple-linkify.git"
+    "url": "git+https://github.com/yurkagon/react-simple-linkify.git"
   },
-  "main": "build/index.js",
+  "type": "module",
+  "packageManager": "pnpm@11.2.2",
+  "engines": {
+    "node": ">=20.19"
+  },
   "scripts": {
-    "build": "webpack",
-    "publish-package": "yarn build && yarn publish"
-  },
-  "peerDependencies": {
-    "prop-types": "^15.7.2",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "dev": "pnpm --filter demo dev",
+    "build": "pnpm --filter react-simple-linkify build",
+    "test": "pnpm --filter react-simple-linkify test",
+    "test:watch": "pnpm --filter react-simple-linkify test:watch",
+    "test:coverage": "pnpm --filter react-simple-linkify test:coverage",
+    "typecheck": "pnpm -r typecheck",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "verify-pack": "pnpm --filter react-simple-linkify verify-pack",
+    "release": "pnpm build && pnpm --filter react-simple-linkify publish",
+    "prepare": "husky"
   },
   "devDependencies": {
-    "prop-types": "^15.7.2",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "@babel/core": "^7.4.5",
-    "@babel/preset-env": "^7.4.5",
-    "@babel/preset-react": "^7.0.0",
-    "babel-cli": "^6.26.0",
-    "babel-core": "^6.26.3",
-    "babel-loader": "^8.0.6",
-    "babel-plugin-transform-object-rest-spread": "^6.26.0",
-    "babel-plugin-transform-react-jsx": "^6.24.1",
-    "webpack": "^4.32.2",
-    "webpack-cli": "^3.3.2"
+    "@eslint/js": "10.0.1",
+    "@types/react": "19.2.17",
+    "@types/react-dom": "19.2.3",
+    "eslint": "10.5.0",
+    "eslint-plugin-react-hooks": "7.1.1",
+    "eslint-plugin-react-refresh": "0.5.3",
+    "globals": "17.6.0",
+    "husky": "9.1.7",
+    "lint-staged": "17.0.7",
+    "prettier": "3.8.4",
+    "typescript": "6.0.3",
+    "typescript-eslint": "8.61.1"
   },
-  "keywords": [
-    "react-simple-linkify",
-    "react",
-    "linkify",
-    "react-component",
-    "link",
-    "url",
-    "autolink",
-    "urlize",
-    "urlify"
-  ]
+  "lint-staged": {
+    "*.{ts,tsx,js,jsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{json,md,yml,yaml,css,html}": [
+      "prettier --write"
+    ]
+  }
 }

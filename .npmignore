@@ -1,7 +1,0 @@
-node_modules
-src
-.babelrc
-.gitignore
-.editorconfig
-.yarn.lock
-webpack.config.js
