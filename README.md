@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./docs/logo.png" alt="react-simple-linkify" width="70%" />
+<img src="docs/logo.png" alt="react-simple-linkify" width="70%" />
 
 # react-simple-linkify
 
