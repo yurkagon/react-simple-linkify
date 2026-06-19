@@ -8,4 +8,3 @@ coverage/
 # copied from repo root during npm pack — not committed
 react-simple-linkify/README.md
 react-simple-linkify/LICENSE
-react-simple-linkify/docs/
