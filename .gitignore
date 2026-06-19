@@ -1,3 +1,10 @@
 node_modules/
+dist/
 build/
+coverage/
 .DS_Store
+*.log
+.vite/
+# copied from repo root during npm pack — not committed
+react-simple-linkify/README.md
+react-simple-linkify/LICENSE
