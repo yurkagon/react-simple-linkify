@@ -1,6 +1,6 @@
 {
   "name": "react-simple-linkify",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "Tiny, dependency-free React library that turns URLs in text into clickable links — or any custom component you want.",
   "license": "MIT",
   "author": "Yurii Khvyshchuk <owngameplay@gmail.com> (https://github.com/yurkagon)",
